@@ -21,8 +21,7 @@
 title: SloppyMio0 
 email: sunyiqing@stu.scu.edu.cn 
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! This is SloppyMio0. I like football⚽️, music🎹, literature critics🤬, philosophy🤔 & a lot more interesting stuff!!
-  Feel free to contact me if you are also a fan of philosophy⚣ or CCP explainer❤️ 
+  Hi! This is SloppyMio0.  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "miro0o.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mir0sun 
