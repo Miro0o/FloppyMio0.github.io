@@ -53,3 +53,23 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+links1: 
+  - name: Testname1
+    url: / 
+    type: recent
+    external: false
+
+  - name: Testname2
+    url: /Blogs/test1 
+    type: test1
+    external: false
+  
+  - name: Testname3
+    url: /Blogs/test2
+    type: test2
+    external: false
+
+blog_1: recent
+blog_2: test1
+blog_3: test2

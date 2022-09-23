@@ -19,13 +19,13 @@
 
       <header>
         <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p> 
       </header>
 
       <div id="banner">
         <span id="logo"></span>
-
-        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        {% include header.html %}
+      
         {% if site.show_downloads %}
           <div class="downloads">
             <span>Downloads:</span>
@@ -35,21 +35,20 @@
             </ul>
           </div>
         {% endif %}
+       
       </div><!-- end banner -->
 
     <div class="wrapper">
       <nav>
         <ul></ul>
+        <!-- {% include toc.html html=content %} -->
       </nav>
       <section>
         {{ content }}
 
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+        {% include footer.html %}
       </footer>
     </div>
   </body>
