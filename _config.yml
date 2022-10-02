@@ -34,6 +34,27 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
+# back to top link
+back_to_top: true
+back_to_top_text: "back to top"
+footer_content: "test text"
+
+# Footer last edited timestamp
+last_edit_timestamp: true
+last_edit_time_format: "%b %e $Y at %I:%M %p"
+
+aux_links:
+  "About":
+    - "/404.html"
+
+aux_links_new_tab: false
+nav_sort: case_sensitive
+nav_external_links:
+  - title: About
+    url: https://github.com/just-the-docs/just-the-docs
+
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
