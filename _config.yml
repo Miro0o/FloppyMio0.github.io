@@ -112,7 +112,7 @@ author:
   links:
     - title: Twitter
       url: https://twitter.com/mir0sun
-      icon: fa-brands fa-square-x-twitter
+      icon: fab fa-square-x-twitter
     - title: Instagram
       url: https://instagram.com/miro0ooo0
       icon: fab fa-instagram
@@ -124,7 +124,7 @@ author:
 footer_links:
   - title: Twitter
     url: https://twitter.com/mir0sun
-    icon: fa-brands fa-square-x-twitter
+    icon: fab fa-square-x-twitter
   - title: Instagram
     url: https://instagram.com/miro0ooo0
     icon: fab fa-instagram
