@@ -21,14 +21,14 @@ title: "Mir0 Son"
 description: "Hi there! This is mir0."
 baseurl: "" # the subpath of your site, e.g. "/blog"
 url: "https://miro0o.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: "/images/so-simple-site-logo.png" # path of site logo, e.g. "/assets/images/logo.png"
+logo: "/images/site-logo.jpeg" # path of site logo, e.g. "/assets/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: true
 words_per_minute: 200
 mathjax:
   enable: true
-#  combo: "tex-mml-chtml"
-#  tags: "none"
+  combo: "tex-mml-chtml"
+  tags: "ams"
 google_fonts:
   - name: "Source Sans Pro"
     weights: "400,400i,700,700i"
@@ -36,9 +36,9 @@ google_fonts:
     weights: "400,400i,700,700i"
 google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
-  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+  shortname: comments-micro # Disqus shortname, e.g. "my_disqus_shortname"
 twitter:
-  username: mmistakes # site's Twitter username
+  username: mir0sun # site's Twitter username
 
 # Liquid
 liquid:
@@ -105,31 +105,31 @@ defaults:
 
 # Site Author
 author:
-  name: Michael Rose
-  picture: /images/michael-rose-photo.jpg
+  name: Mir0 Son
+  picture: /images/miro-son-photo.jpeg
   email:
-  twitter: mmistakes
+  twitter: mir0sun
   links:
     - title: Twitter
-      url: https://twitter.com/mmistakes
-      icon: fab fa-twitter-square
+      url: https://twitter.com/mir0sun
+      icon: fab fa-x-twitter
     - title: Instagram
-      url: https://instagram.com/mmistakes
+      url: https://instagram.com/miro0ooo0
       icon: fab fa-instagram
     - title: GitHub
-      url: https://github.com/mmistakes
+      url: https://github.com/Miro0o
       icon: fab fa-github-square
 
 # Footer Links
 footer_links:
   - title: Twitter
-    url: https://twitter.com/mmistakes
-    icon: fab fa-twitter-square
+    url: https://twitter.com/mir0sun
+    icon: fab fa-x-twitter
   - title: Instagram
-    url: https://instagram.com/mmistakes
+    url: https://instagram.com/miro0ooo0
     icon: fab fa-instagram
   - title: GitHub
-    url: https://github.com/mmistakes
+    url: https://github.com/Miro0o
     icon: fab fa-github-square
   - title: Feed
     url: atom.xml
