@@ -94,6 +94,10 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+# Head Scripts:
+# head_scripts:
+
+
 # Front Matter Defaults
 defaults:
   # Post defaults
@@ -153,11 +157,15 @@ footer_links:
     # icon: fab fa-github-square
     icon: fa-brands fa-square-github
     # icon: fa-brands fa-github
+  - title: Stackoverflow
+    url: https://stackoverflow.com/users/16542494/sun-mir0
+    icon:
   - title: Feed
     url: atom.xml
     # icon: fas fa-rss-square
     icon: fa-solid fa-square-rss
     # icon: fa-solid fa-rss
+
 
 # Custommed Footer Scripts. This will override the default foot_scripts
 # footer_scripts
