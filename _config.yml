@@ -16,7 +16,11 @@
 # theme: jekyll-theme-so-simple
 remote_theme: mmistakes/so-simple-theme
 skin: "/assets/css/skins/default.css"
+
+# Language supports. Related configs in _data/text.yml - by liquid templating system
+# Supported Languages: English (default), German, Spanish, French, Italy, Turkish
 locale: en-US
+
 title: "Mir0 Son"
 description: "Hi there! This is mir0."
 baseurl: "" # the subpath of your site, e.g. "/blog"
