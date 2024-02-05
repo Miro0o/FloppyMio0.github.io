@@ -46,8 +46,7 @@ $base0d: #268bd2 !default;
 $base0e: #6c71c4 !default;
 $base0f: #d33682 !default;
 
-@media (prefers-color-scheme: dark) {
-/* Colors */
+/*@media (prefers-color-scheme: dark) {
     $base-color: #eaeaea !default;
     $text-color: #eaeaea !default;
     $accent-color: #00adb5 !default;
@@ -79,7 +78,6 @@ $base0f: #d33682 !default;
     $base0d: #82aaff;
     $base0e: #c792ea;
     $base0f: #ff5370;
-
-}
+}*/
 
 @import "so-simple/skin";
