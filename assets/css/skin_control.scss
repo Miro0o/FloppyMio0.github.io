@@ -1,12 +1,12 @@
 ---
 ---
 
-@import "skins/default";
+/*@import "skins/default";
 @media (prefers-color-scheme: dark) {
     @import "skins/dark";
 }
+*/
 
-/*
 @charset "utf-8";
 
 @import "so-simple/functions";
@@ -79,4 +79,4 @@ $base0f: #d33682 !default;
     $base0f: #ff5370;
 }
 
-@import "so-simple/skin";*/
+@import "so-simple/skin";
