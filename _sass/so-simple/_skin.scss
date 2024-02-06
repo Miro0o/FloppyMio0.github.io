@@ -240,13 +240,13 @@ td {
   $buttoncolors: (primary, var(--primary-color)), (accent, var(--accent-color)), (inverse, #fff),
   (light-outline, transparent),  (success, var(--success-color)),
   (warning, var(--warning-color)),  (danger, var(--danger-color)),  (info, var(--info-color)),
-  (facebook, var(--facebook-color)),  (twitter, var(--twitter-color)), (x-twitter, var(--x-twitter-color)),
-  (google-plus, var(--google-plus-color)),  (linkedin, var(--linkedin-color)),
-  (reddit, var(--reddit-color));
+  (facebook, $facebook-color),  (twitter, $twitter-color), (x-twitter, $x-twitter-color),
+  (google-plus, $google-plus-color),  (linkedin, $linkedin-color),
+  (reddit, $reddit-color);
 
-  @each var(--buttoncolor), $color in $buttoncolors {
+  @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
-      @include yiq-contrasted(var(--color));
+      @include yiq-contrasted($color);
       @if ($buttoncolor == inverse) {
         border: 1px solid var(--border-color);
       }
@@ -255,11 +255,11 @@ td {
       }
 
       &:hover {
-        @include yiq-contrasted(mix(#000, var(--color), 20%));
+        @include yiq-contrasted(mix(#000, $color, 20%));
       }
 
       &:visited {
-        @include yiq-contrasted(var(--color));
+        @include yiq-contrasted($color);
       }
     }
   }
