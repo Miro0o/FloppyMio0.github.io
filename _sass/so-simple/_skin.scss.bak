@@ -1,24 +1,26 @@
+
+
 /* ==========================================================================
    Base elements
    ========================================================================== */
 
 body {
   color: var(--text-color);
-  background: $background-color;
-  border-top-color: $nav-background-color;
+  background: var(--background-color);
+  border-top-color: var(--nav-background-color);
 }
 
 a {
-  color: $accent-color;
+  color: var(--accent-color);
 
   &:hover {
-    color: shade($accent-color, 25%);
+    color: shade(var(--accent-color), 25%);
   }
 }
 
 blockquote {
-  background-color: mix($background-color, $accent-color, 90%);
-  border-left-color: $accent-color;
+  background-color: mix(var(--background-color), var(--accent-color), 90%);
+  border-left-color: var(--accent-color);
 }
 
 /* ==========================================================================
@@ -27,127 +29,127 @@ blockquote {
 
 .site-title {
   a {
-    color: $text-color;
+    color: var(--text-color);
   }
 }
 
 .copyright {
-  color: lighten($text-color, 25%);
+  color: lighten(var(--text-color), 25%);
   a {
-    color: lighten($text-color, 25%);
+    color: lighten(var(--text-color), 25%);
   }
 }
 
 .taxonomy-title {
-  color: lighten($text-color, 60%);
+  color: lighten(var(--text-color), 60%);
 }
 
 .taxonomy-count {
-  color: lighten($text-color, 50%);
+  color: lighten(var(--text-color), 50%);
 }
 
 .taxonomy-index {
   a {
-    border-bottom-color: $border-color;
+    border-bottom-color: var(--border-color);
 
     &:hover {
-      color: $accent-color;
+      color: var(--accent-color);
     }
   }
 }
 
 .taxonomy-section {
   &:not(:last-child) {
-    border-bottom-color: $border-color;
+    border-bottom-color: var(--border-color);
   }
 }
 
 .back-to-top {
-  color: lighten($text-color, 50%);
+  color: lighten(var(--text-color), 50%);
 }
 
 .site-nav {
   ul {
-    color: $nav-color;
-    background-color: $nav-background-color;
+    color: var(--nav-color);
+    background-color: var(--nav-background-color);
   }
 
   a {
-    color: $nav-color;
-    border-color: $nav-background-color;
+    color: var(--nav-color);
+    border-color: var(--nav-background-color);
 
     &:hover {
-      border-color: $nav-color;
+      border-color: var(--nav-color);
     }
   }
 }
 
 .site-footer {
-  border-top-color: $border-color;
+  border-top-color: var(--border-color);
 }
 
 .footnotes {
-  border-top-color: $border-color;
+  border-top-color: var(--border-color);
 }
 
 .site-logo-img {
-  border-color: $background-color;
+  border-color: var(--background-color);
 }
 
 .toc-wrapper {
-  border-color: mix(#fff, $border-color, 25%);
+  border-color: mix(#fff, var(--border-color), 25%);
 
   h2 {
-    color: $base05;
-    background-color: $base00;
+    color: var(--base05);
+    background-color: var(--base00);
   }
 
   li {
     ol {
-      background-color: $background-color;
+      background-color: var(--background-color);
     }
 
     a {
       &:hover,
       &:focus {
-        border-bottom: 1px dotted $border-color;
+        border-bottom: 1px dotted var(--border-color);
       }
     }
   }
 }
 
 #menu-toggle {
-  color: $nav-color;
+  color: var(--nav-color);
 }
 
 #menu-toggle {
-  background-color: $nav-background-color;
+  background-color: var(--nav-background-color);
 }
 
 #markdown-toc {
-  color: $base05;
+  color: var(--base05);
 }
 
 .pagination {
   li {
     a {
-      color: mix($text-color, $border-color, 50%);
-      border-color: $border-color;
+      color: mix(var(--text-color), var(--border-color), 50%);
+      border-color: var(--border-color);
 
       &.current,
       &.current.disabled {
-        @include yiq-contrasted(mix($text-color, $border-color, 50%));
+        @include yiq-contrasted(mix(var(--text-color), var(--border-color), 50%));
       }
 
       &.disabled {
-        color: $border-color;
+        color: var(--border-color);
       }
     }
   }
 }
 
 .search-input {
-  border-color: $border-color;
+  border-color: var(--border-color);
 }
 
 /* ==========================================================================
@@ -156,7 +158,7 @@ blockquote {
 
 .page-previous,
 .page-next {
-  color: $text-color;
+  color: var(--text-color);
 }
 
 /* ==========================================================================
@@ -166,7 +168,7 @@ blockquote {
 .entry {
   a {
     &:hover {
-      color: $accent-color;
+      color: var(--accent-color);
     }
   }
 }
@@ -177,7 +179,7 @@ blockquote {
 
 th,
 td {
-  border-bottom-color: $border-color;
+  border-bottom-color: var(--border-color);
 }
 
 
@@ -187,37 +189,37 @@ td {
 
 /* Default notice */
 .notice {
-  @include notice(lighten($base-color, 90%));
+  @include notice(lighten(var(--base-color), 90%));
 }
 
 /* Accent notice */
 .notice--accent {
-  @include notice(mix(#fff, $accent-color, 70%));
+  @include notice(mix(#fff, var(--accent-color), 70%));
 }
 
 /* Primary notice */
 .notice--primary {
-  @include notice(mix(#fff, $primary-color, 70%));
+  @include notice(mix(#fff, var(--primary-color), 70%));
 }
 
 /* Warning notice */
 .notice--warning {
-  @include notice(mix(#fff, $warning-color, 70%));
+  @include notice(mix(#fff, var(--warning-color), 70%));
 }
 
 /* Success notice */
 .notice--success {
-  @include notice(mix(#fff, $success-color, 70%));
+  @include notice(mix(#fff, var(--success-color), 70%));
 }
 
 /* Danger notice */
 .notice--danger {
-  @include notice(mix(#fff, $danger-color, 70%));
+  @include notice(mix(#fff, var(--danger-color), 70%));
 }
 
 /* Info notice */
 .notice--info {
-  @include notice(mix(#fff, $info-color, 70%));
+  @include notice(mix(#fff, var(--info-color), 70%));
 }
 
 /* ==========================================================================
@@ -228,7 +230,7 @@ td {
 .screen-reader-text,
 .screen-reader-text span,
 .screen-reader-shortcut {
-  background-color: $base-color;
+  background-color: var(--base-color);
 }
 
 /* ==========================================================================
@@ -237,9 +239,9 @@ td {
 
 .btn {
   /* button colors */
-  $buttoncolors: (primary, $primary-color), (accent, $accent-color), (inverse, #fff),
-  (light-outline, transparent),  (success, $success-color),
-  (warning, $warning-color),  (danger, $danger-color),  (info, $info-color),
+  $buttoncolors: (primary, var(--primary-color)), (accent, var(--accent-color)), (inverse, #fff),
+  (light-outline, transparent),  (success, var(--success-color)),
+  (warning, var(--warning-color)),  (danger, var(--danger-color)),  (info, var(--info-color)),
   (facebook, $facebook-color),  (twitter, $twitter-color), (x-twitter, $x-twitter-color),
   (google-plus, $google-plus-color),  (linkedin, $linkedin-color),
   (reddit, $reddit-color);
@@ -248,7 +250,7 @@ td {
     &--#{$buttoncolor} {
       @include yiq-contrasted($color);
       @if ($buttoncolor == inverse) {
-        border: 1px solid $border-color;
+        border: 1px solid var(--border-color);
       }
       @if ($buttoncolor == light-outline) {
         border: 1px solid #fff;
@@ -270,77 +272,77 @@ td {
    ========================================================================== */
 
 code.highlighter-rouge {
-  color: $base05;
-  background-color: $base00;
+  color: var(--base05);
+  background-color: var(--base00);
 }
 
 div.highlighter-rouge,
 figure.highlight {
-  color: $base05;
-  background-color: $base00;
+  color: var(--base05);
+  background-color: var(--base00);
 }
 
 .highlight table {
   td {
     &.gutter {
-      color: $base04;
-      border-right-color: $base04;
+      color: var(--base04);
+      border-right-color: var(--base04);
     }
   }
 }
 
 .highlight .hll {
-  background-color: $base06;
+  background-color: var(--base06);
 }
 
 .highlight {
   .c {
     /* Comment */
-    color: $base04;
+    color: var(--base04);
   }
   .err {
     /* Error */
-    color: $base08;
+    color: var(--base08);
   }
   .k {
     /* Keyword */
-    color: $base0e;
+    color: var(--base0e);
   }
   .l {
     /* Literal */
-    color: $base09;
+    color: var(--base09);
   }
   .n {
     /* Name */
-    color: $base05;
+    color: var(--base05);
   }
   .o {
     /* Operator */
-    color: $base0c;
+    color: var(--base0c);
   }
   .p {
     /* Punctuation */
-    color: $base05;
+    color: var(--base05);
   }
   .cm {
     /* Comment.Multiline */
-    color: $base04;
+    color: var(--base04);
   }
   .cp {
     /* Comment.Preproc */
-    color: $base04;
+    color: var(--base04);
   }
   .c1 {
     /* Comment.Single */
-    color: $base04;
+    color: var(--base04);
   }
   .cs {
     /* Comment.Special */
-    color: $base04;
+    color: var(--base04);
   }
   .gd {
     /* Generic.Deleted */
-    color: $base08;
+    color: var(--base08);
   }
   .ge {
     /* Generic.Emph */
@@ -348,16 +350,16 @@ figure.highlight {
   }
   .gh {
     /* Generic.Heading */
-    color: $base05;
+    color: var(--base05);
     font-weight: bold;
   }
   .gi {
     /* Generic.Inserted */
-    color: $base0b;
+    color: var(--base0b);
   }
   .gp {
     /* Generic.Prompt */
-    color: $base04;
+    color: var(--base04);
     font-weight: bold;
   }
   .gs {
@@ -366,187 +368,187 @@ figure.highlight {
   }
   .gu {
     /* Generic.Subheading */
-    color: $base0c;
+    color: var(--base0c);
     font-weight: bold;
   }
   .kc {
     /* Keyword.Constant */
-    color: $base0e;
+    color: var(--base0e);
   }
   .kd {
     /* Keyword.Declaration */
-    color: $base0e;
+    color: var(--base0e);
   }
   .kn {
     /* Keyword.Namespace */
-    color: $base0c;
+    color: var(--base0c);
   }
   .kp {
     /* Keyword.Pseudo */
-    color: $base0e;
+    color: var(--base0e);
   }
   .kr {
     /* Keyword.Reserved */
-    color: $base0e;
+    color: var(--base0e);
   }
   .kt {
     /* Keyword.Type */
-    color: $base0a;
+    color: var(--base0a);
   }
   .ld {
     /* Literal.Date */
-    color: $base0b;
+    color: var(--base0b);
   }
   .m {
     /* Literal.Number */
-    color: $base09;
+    color: var(--base09);
   }
   .s {
     /* Literal.String */
-    color: $base0b;
+    color: var(--base0b);
   }
   .na {
     /* Name.Attribute */
-    color: $base0d;
+    color: var(--base0d);
   }
   .nb {
     /* Name.Builtin */
-    color: $base05;
+    color: var(--base05);
   }
   .nc {
     /* Name.Class */
-    color: $base0a;
+    color: var(--base0a);
   }
   .no {
     /* Name.Constant */
-    color: $base08;
+    color: var(--base08);
   }
   .nd {
     /* Name.Decorator */
-    color: $base0c;
+    color: var(--base0c);
   }
   .ni {
     /* Name.Entity */
-    color: $base05;
+    color: var(--base05);
   }
   .ne {
     /* Name.Exception */
-    color: $base08;
+    color: var(--base08);
   }
   .nf {
     /* Name.Function */
-    color: $base0d;
+    color: var(--base0d);
   }
   .nl {
     /* Name.Label */
-    color: $base05;
+    color: var(--base05);
   }
   .nn {
     /* Name.Namespace */
-    color: $base0a;
+    color: var(--base0a);
   }
   .nx {
     /* Name.Other */
-    color: $base0d;
+    color: var(--base0d);
   }
   .py {
     /* Name.Property */
-    color: $base05;
+    color: var(--base05);
   }
   .nt {
     /* Name.Tag */
-    color: $base0c;
+    color: var(--base0c);
   }
   .nv {
     /* Name.Variable */
-    color: $base08;
+    color: var(--base08);
   }
   .ow {
     /* Operator.Word */
-    color: $base0c;
+    color: var(--base0c);
   }
   .w {
     /* Text.Whitespace */
-    color: $base05;
+    color: var(--base05);
   }
   .mf {
     /* Literal.Number.Float */
-    color: $base09;
+    color: var(--base09);
   }
   .mh {
     /* Literal.Number.Hex */
-    color: $base09;
+    color: var(--base09);
   }
   .mi {
     /* Literal.Number.Integer */
-    color: $base09;
+    color: var(--base09);
   }
   .mo {
     /* Literal.Number.Oct */
-    color: $base09;
+    color: var(--base09);
   }
   .sb {
     /* Literal.String.Backtick */
-    color: $base0b;
+    color: var(--base0b);
   }
   .sc {
     /* Literal.String.Char */
-    color: $base05;
+    color: var(--base05);
   }
   .sd {
     /* Literal.String.Doc */
-    color: $base04;
+    color: var(--base04);
   }
   .s2 {
     /* Literal.String.Double */
-    color: $base0b;
+    color: var(--base0b);
   }
   .se {
     /* Literal.String.Escape */
-    color: $base09;
+    color: var(--base09);
   }
   .sh {
     /* Literal.String.Heredoc */
-    color: $base0b;
+    color: var(--base0b);
   }
   .si {
     /* Literal.String.Interpol */
-    color: $base09;
+    color: var(--base09);
   }
   .sx {
     /* Literal.String.Other */
-    color: $base0b;
+    color: var(--base0b);
   }
   .sr {
     /* Literal.String.Regex */
-    color: $base0b;
+    color: var(--base0b);
   }
   .s1 {
     /* Literal.String.Single */
-    color: $base0b;
+    color: var(--base0b);
   }
   .ss {
     /* Literal.String.Symbol */
-    color: $base0b;
+    color: var(--base0b);
   }
   .bp {
     /* Name.Builtin.Pseudo */
-    color: $base05;
+    color: var(--base05);
   }
   .vc {
     /* Name.Variable.Class */
-    color: $base08;
+    color: var(--base08);
   }
   .vg {
     /* Name.Variable.Global */
-    color: $base08;
+    color: var(--base08);
   }
   .vi {
     /* Name.Variable.Instance */
-    color: $base08;
+    color: var(--base08);
   }
   .il {
     /* Literal.Number.Integer.Long */
-    color: $base09;
+    color: var(--base09);
   }
 }
