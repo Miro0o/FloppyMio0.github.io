@@ -71,7 +71,7 @@ a {
 }
 
 blockquote {
-  background-color: mix(var(--background-color), var(--accent-color), 90%);
+  background-color: mix(var(--background-color), #{var(--accent-color)}, 90%);
   border-left-color: var(--accent-color);
 }
 
@@ -246,7 +246,7 @@ td {
 
 /* Accent notice */
 .notice--accent {
-  @include notice(mix(#fff, var(--accent-color), 70%));
+  @include notice(mix(#fff, #{var(--accent-color)}, 70%));
 }
 
 /* Primary notice */
