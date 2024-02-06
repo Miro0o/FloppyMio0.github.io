@@ -3,7 +3,7 @@
    ========================================================================== */
 
 body {
-  color: var(--text-color);
+  color: $text-color;
   background: $background-color;
   border-top-color: $nav-background-color;
 }
