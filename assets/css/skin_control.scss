@@ -13,10 +13,12 @@
 @import "so-simple/variables";
 @import "so-simple/notices";
 
+$accent-color: #34374C;
+
 :root{
     --base-color: #000;
     --text-color: #000;
-    --accent-color: #34374C;
+/*    --accent-color: #34374C;*/
     --nav-color: #fff;
     --background-color: #fff;
     --nav-background-color: #000;
@@ -63,16 +65,16 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: $accent-color;
 
   &:hover {
-    color: shade(var(--accent-color), 25%);
+    color: shade($accent-color, 25%);
   }
 }
 
 blockquote {
-  background-color: mix(var(--background-color), #{var(--accent-color)}, 90%);
-  border-left-color: var(--accent-color);
+  background-color: mix(var(--background-color), $accent-color)}, 90%);
+  border-left-color: $accent-color;
 }
 
 /* ==========================================================================
@@ -105,7 +107,7 @@ blockquote {
     border-bottom-color: var(--border-color);
 
     &:hover {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 }
@@ -220,7 +222,7 @@ blockquote {
 .entry {
   a {
     &:hover {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 }
@@ -246,7 +248,7 @@ td {
 
 /* Accent notice */
 .notice--accent {
-  @include notice(mix(#fff, #{var(--accent-color)}, 70%));
+  @include notice(mix(#fff, $accent-color, 70%));
 }
 
 /* Primary notice */
@@ -291,7 +293,7 @@ td {
 
 .btn {
   /* button colors */
-  $buttoncolors: (primary, var(--primary-color)), (accent, var(--accent-color)), (inverse, #fff),
+  $buttoncolors: (primary, var(--primary-color)), (accent, $accent-color), (inverse, #fff),
   (light-outline, transparent),  (success, var(--success-color)),
   (warning, var(--warning-color)),  (danger, var(--danger-color)),  (info, var(--info-color)),
   (facebook, $facebook-color),  (twitter, $twitter-color), (x-twitter, $x-twitter-color),
@@ -609,7 +611,7 @@ figure.highlight {
   :root{
     --base-color: #eaeaea;
     --text-color: #eaeaea;
-    --accent-color: #00adb5;
+/*    --accent-color: #00adb5;*/
     --nav-color: #aeaeae;
     --background-color: #252a34;
     --nav-background-color: mix(#000, var(--background-color), 30%);
